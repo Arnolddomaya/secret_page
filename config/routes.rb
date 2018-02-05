@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   root'users#home'
   get '/users', to:'users#home'
-  
+  get '/secret_page', to: 'users#secret_page'
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
