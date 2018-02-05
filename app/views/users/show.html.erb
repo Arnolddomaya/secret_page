@@ -1,0 +1,12 @@
+<div class="center jumbotron">
+	<h1> Le profil de <%= @user.email%></h1>
+<ul>
+	<li> <strong>Email :</strong> <%= @user.email %> </li>
+</ul>
+
+<br><br><%= link_to "[Editer]", edit_user_path(@user) %>
+<%= link_to "[Supprimer]", user_path(@user),
+              method: :delete,
+              data: { confirm: 'Es-tu sûr ?' } %>
+<%= link_to "[Retour à l'index]", users_path %>
+</div>
