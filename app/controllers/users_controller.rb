@@ -3,6 +3,9 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def secret_page
+  end
+   
   def home
   end
 
